@@ -13,3 +13,18 @@ x3=np.linspace(-1,1,16)
 y1=1/(1+36*x1**2)
 y2=1/(1+36*x2**2)
 y3=1/(1+36*x3**2)
+def p(n,m):
+    q1=1
+    k=0
+    k1=[]
+    for i in range(len(n)):
+        for j in range(len(n)):
+            if j!=i:
+                q1=q1*(n[i]-n[j])
+                k1=k1+[n[j]]
+        e1=m[i]/q1
+        p1=np.poly1d(k1,r=True)*e1
+        k1=[]
+        q1=1
+        k=k+p1
+    return k
