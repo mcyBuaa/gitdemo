@@ -28,3 +28,9 @@ def p(n,m):
         q1=1
         k=k+p1
     return k
+x=np.linspace(-1,1,50)
+y=1/(1+36*x**2)
+p1=p(x1,y1)
+p2=p(x2,y2)
+p3=p(x3,y3)
+m=[p1,p2,p3]
