@@ -34,7 +34,6 @@ p1=p(x1,y1)
 p2=p(x2,y2)
 p3=p(x3,y3)
 m=[p1,p2,p3]
-#绘制图像
 for i in range(3):
     print('L({})='.format((i+1)*5),m[i])
 y11=p1(x)
@@ -47,4 +46,4 @@ plt.plot(x,y33,color=(0,0.25,0),label='L15(x)')
 plt.legend()
 plt.title('插值多项式')
 plt.show()
-#结束运行
+#made by mcy
