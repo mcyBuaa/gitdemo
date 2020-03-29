@@ -58,3 +58,18 @@ for i in range(23):
 import matplotlib.pyplot as plt
 plt.plot(x,y,'ro--',linewidth=1,label='original line')
 plt.legend()
+
+#made by mcybuaa
+import numpy as np
+p=np.polyfit(x,y,5)
+x1=np.linspace(1,5,1000)
+y1=np.polyval(p,x1)
+plt.plot(x1,y1,color='b',linewidth=2,label='smooth line')
+plt.legend()
+plt.ylabel('f(x)')
+plt.xlabel('x')
+q=[]
+for i in p:
+    q=q+[int(round(i,0))]
+plt.title(q)
+plt.show()
